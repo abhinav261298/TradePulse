@@ -1,0 +1,56 @@
+/* Terminal Container */
+.terminal {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Chart Section - 70% */
+.chartSection {
+  flex: 7;
+  background-color: var(--color-bg-primary);
+  border-bottom: var(--border-width) solid var(--color-border-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+
+.chartPlaceholder {
+  text-align: center;
+  color: var(--color-text-tertiary);
+}
+
+.chartPlaceholder p:first-child {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Trade Form Section - 30% */
+.tradeFormSection {
+  flex: 3;
+  padding: var(--spacing-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+}
+
+.formPlaceholder {
+  text-align: center;
+  color: var(--color-text-tertiary);
+}
+
+.formPlaceholder p:first-child {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.note {
+  font-size: var(--font-size-sm);
+  font-style: italic;
+}

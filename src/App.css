@@ -1,0 +1,129 @@
+/* TradePulse App Layout */
+.app-container {
+  display: grid;
+  grid-template-columns: var(--grid-col-watchlist) var(--grid-col-terminal) var(--grid-col-portfolio);
+  gap: var(--layout-gap);
+  min-height: 100vh;
+  padding: var(--spacing-md);
+  max-width: var(--layout-max-width);
+  margin: 0 auto;
+}
+
+/* Panel Styles */
+.panel {
+  background-color: var(--color-bg-secondary);
+  border: var(--border-width) solid var(--color-border-primary);
+  border-radius: var(--border-radius-md);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.panel-header {
+  padding: var(--spacing-md);
+  border-bottom: var(--border-width) solid var(--color-border-primary);
+  background-color: var(--color-bg-primary);
+}
+
+.panel-header h2 {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.panel-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--spacing-md);
+}
+
+/* Watchlist Panel */
+.watchlist-panel .panel-content {
+  padding: 0;
+}
+
+.ticker-item {
+  padding: var(--spacing-md);
+  border-bottom: var(--border-width) solid var(--color-border-primary);
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: var(--spacing-sm);
+  align-items: center;
+}
+
+.ticker-item:hover {
+  background-color: var(--color-bg-tertiary);
+}
+
+.ticker-item.selected {
+  background-color: var(--color-bg-tertiary);
+  border-left: 3px solid var(--color-primary);
+}
+
+.ticker-symbol {
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-base);
+  color: var(--color-text-primary);
+}
+
+.ticker-price {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  text-align: right;
+}
+
+.ticker-change {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  text-align: right;
+}
+
+.ticker-change.positive {
+  color: var(--color-success);
+}
+
+.ticker-change.negative {
+  color: var(--color-danger);
+}
+
+/* Terminal Panel */
+.terminal-panel .panel-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  padding: 0;
+}
+
+.chart-placeholder {
+  flex: 7;
+  background-color: var(--color-bg-primary);
+  border-bottom: var(--border-width) solid var(--color-border-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-tertiary);
+  min-height: 400px;
+}
+
+.trade-form-placeholder {
+  flex: 3;
+  padding: var(--spacing-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-tertiary);
+  min-height: 200px;
+}
+
+/* Portfolio Panel */
+.portfolio-panel .panel-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-tertiary);
+}

@@ -1,0 +1,130 @@
+/**
+ * TradePulse - CSS Variables
+ * Design System: Dark Theme Trading Terminal
+ */
+
+:root {
+  /* ===== COLOR PALETTE ===== */
+  
+  /* Primary Colors */
+  --color-primary: #3B82F6;
+  --color-primary-hover: #2563EB;
+  --color-primary-light: #60A5FA;
+  
+  /* Success/Up (Green) */
+  --color-success: #10B981;
+  --color-success-hover: #059669;
+  --color-success-light: #34D399;
+  --color-success-bg: rgba(16, 185, 129, 0.1);
+  
+  /* Danger/Down (Red) */
+  --color-danger: #EF4444;
+  --color-danger-hover: #DC2626;
+  --color-danger-light: #F87171;
+  --color-danger-bg: rgba(239, 68, 68, 0.1);
+  
+  /* Background Colors */
+  --color-bg-primary: #111827;
+  --color-bg-secondary: #1F2937;
+  --color-bg-tertiary: #374151;
+  --color-bg-hover: #4B5563;
+  
+  /* Text Colors */
+  --color-text-primary: #F9FAFB;
+  --color-text-secondary: #D1D5DB;
+  --color-text-tertiary: #9CA3AF;
+  --color-text-disabled: #6B7280;
+  
+  /* Border Colors */
+  --color-border-primary: #374151;
+  --color-border-secondary: #4B5563;
+  --color-border-focus: var(--color-primary);
+  
+  /* Chart Colors */
+  --color-chart-line: var(--color-primary);
+  --color-chart-grid: #333333;
+  --color-chart-axis: #888888;
+  --color-chart-current-price: var(--color-success);
+  
+  /* Status Colors */
+  --color-info: #3B82F6;
+  --color-warning: #F59E0B;
+  
+  /* ===== SPACING SCALE ===== */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
+  
+  /* ===== TYPOGRAPHY ===== */
+  
+  /* Font Families */
+  --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  --font-mono: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  
+  /* Font Sizes */
+  --font-size-xs: 0.75rem;    /* 12px */
+  --font-size-sm: 0.875rem;   /* 14px */
+  --font-size-base: 1rem;      /* 16px */
+  --font-size-lg: 1.125rem;    /* 18px */
+  --font-size-xl: 1.25rem;     /* 20px */
+  --font-size-2xl: 1.5rem;     /* 24px */
+  --font-size-3xl: 1.875rem;   /* 30px */
+  
+  /* Font Weights */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+  /* Line Heights */
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+  
+  /* ===== BORDERS ===== */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  --border-radius-full: 9999px;
+  
+  --border-width: 1px;
+  --border-width-thick: 2px;
+  
+  /* ===== SHADOWS ===== */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+  
+  /* ===== TRANSITIONS ===== */
+  --transition-fast: 150ms ease-in-out;
+  --transition-normal: 250ms ease-in-out;
+  --transition-slow: 350ms ease-in-out;
+  
+  /* ===== Z-INDEX LAYERS ===== */
+  --z-base: 0;
+  --z-dropdown: 100;
+  --z-modal: 200;
+  --z-toast: 300;
+  --z-tooltip: 400;
+  
+  /* ===== LAYOUT ===== */
+  --layout-max-width: 1920px;
+  --layout-min-width: 1024px;
+  --layout-gap: var(--spacing-md);
+  
+  /* Grid Columns */
+  --grid-col-watchlist: 25%;
+  --grid-col-terminal: 50%;
+  --grid-col-portfolio: 25%;
+  
+  /* ===== BREAKPOINTS (Desktop-first) ===== */
+  --breakpoint-xl: 1920px;
+  --breakpoint-lg: 1440px;
+  --breakpoint-md: 1024px;
+}
